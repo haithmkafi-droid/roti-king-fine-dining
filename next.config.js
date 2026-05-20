@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/roti-king-fine-dining',
+  assetPrefix: '/roti-king-fine-dining',
 }
 
 module.exports = nextConfig
+
