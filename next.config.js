@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  basePath: '/roti-king-fine-dining',
-  assetPrefix: '/roti-king-fine-dining',
+  assetPrefix: isProd ? '/roti-king-fine-dining/' : '',
+  basePath: isProd ? '/roti-king-fine-dining' : '',
 }
 
 module.exports = nextConfig
